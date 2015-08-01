@@ -8,15 +8,11 @@ public class smlrest extends Component {
 	
 	protected $webserviceserver;
 	
-	public function __construct($config = [])
-    {
-        foreach ($config as $param => $value) {
-            $this->$param = $value;
-        }
-        
-		//$this->validateParameters();
-        //$this->init();
-    }
+	public function __construct($config = []){
+		foreach ($config as $param => $value) {
+			$this->$param = $value;
+		}
+	}
 	
 	public function testConnectXML() {
 		return "Connected";
